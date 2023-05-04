@@ -52,7 +52,7 @@ endHtml = function(){
 }
 
 openHome = function(){
-    window.location = "TylerCichettiResume.html"
+    window.location = "index.html"
 }
 
 skills = function(){
@@ -95,7 +95,7 @@ openSkills = function(){
 
 experiences = function(){
     createTopHalf()
-    document.write("<div class='experiences'>"+
+    document.write("<div class='experiences''>"+
                         "<h2><strong>Employment Experience</strong></h2>")
     
     for(var i =0; i < eAry.length; i++){

@@ -1,3 +1,15 @@
+html{
+    font-family: Georgia;
+}
+
+h2{
+font-size: 21px;
+}
+
+h3{
+    font-size: 17px;
+}
+
 strong{
     font-size: 30px;
     margin-left: 10px;
@@ -165,14 +177,18 @@ img{
 #date0,#date1,#date2,#date3,#date4{
     clear: right;
     float: right;
+    font-size: larger;
 }
 
 #company0,#company1,#company2,#company3,#company4{
     clear: left;
     float: left;
+    font-size: larger;
 }
 
 #title0,#title1,#title2,#title3,#title4{
+    color: navy;
+    font-size: large;
     clear: left;
     float: left;
     margin-top: -5px;
@@ -209,7 +225,7 @@ img{
 
 #descrip0 li:hover:before, #descrip1 li:hover:before, #descrip2 li:hover:before, #descrip3 li:hover:before, #descrip4 li:hover:before { 
     transform: rotate(360deg); 
-    background: lightblue;
+    background-color: lightblue;
 }
 
 #descrip0 li:before, #descrip1 li:before, #descrip2 li:before, #descrip3 li:before, #descrip4 li:before {
@@ -219,7 +235,7 @@ img{
   left: -1.3em;
   top: 50%;
   margin-top: -1.3em;
-  background: #f9dd94;
+  background-color: #f9dd94;
   height: 2em;
   width: 2em;
   line-height: 2em;
@@ -229,23 +245,3 @@ img{
   border-radius: 2em;
   transition: all .3s ease-out;
 }
-
-.experiences{
-    z-index: 1;
-    box-shadow: 0px 0px 5px black;
-    padding-bottom: 110vh; 
-    background: linear-gradient(-45deg, lightgreen,lightcoral, yellow); 
-    background-size: 300% 300%;
-    border-radius: 3%;
-    width: 50%;
-}   
-
-/**.experiences:hover{
-    animation: animate 15s ease infinite;
-}
-
-@keyframes animate {
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    0%{background-position: 0 50%;}
-}**/
