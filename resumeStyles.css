@@ -233,7 +233,7 @@ img{
 .experiences{
     z-index: 1;
     box-shadow: 0px 0px 5px black;
-    padding-bottom: 1030px; 
+    padding-bottom: 110vh; 
     background: linear-gradient(-45deg, lightgreen,lightcoral, yellow); 
     background-size: 300% 300%;
     border-radius: 3%;
