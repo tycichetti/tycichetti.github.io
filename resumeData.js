@@ -21,7 +21,7 @@ let salesforce = new Skill("Salesforce", "Learned and utilized while in my posti
 
 let java = new Skill("Java", "First language learned, in Fall of 2020 for my CS I class. Have used for a few years and feel that I have advanced knowledge of the language.");
 let c = new Skill("C", "Seond language learned, Fall 2021 for my Machine Organization and Assembly Programming class. With the way the class was structured I had to teach myself the language using the textbook. Have made many programs in this language and feel that it may be my strongest language.");
-let python = new Skill("Python", "Most recent language learned, in Spring 2023 for my Artificial Intelligence class. Eventhough it is my most recently learned language, I used it a lot in that semester and learned a lot of the nuances.");
+let python = new Skill("Python", "Most recent language learned, in Spring 2023 for my Artificial Intelligence class. Even though it is my most recently learned language, I used it a lot in that semester and learned a lot of the nuances.");
 let sql = new Skill("SQL", "Learned and utilized in my Intro to Database Systems class in Fall of 2023. Used for various projects such as creating and running Prepared Statments using Java.");
 let assembly = new Skill("Assembly", "Learned in Machine Organization and Assembly Programming in Fall of 2021. Created a few projects throughout that semester using this language.");
 let javascript = new Skill("JavaScript", "Learned in Spring of 2023 in my Web Development class. Most of this website you are looking at is made completely in JavaScript.");

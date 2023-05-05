@@ -178,19 +178,19 @@ img{
     text-align: center;
 }
 
-#date0,#date1,#date2,#date3,#date4{
+#date{
     clear: right;
     float: right;
     font-size: larger;
 }
 
-#company0,#company1,#company2,#company3,#company4{
+#company{
     clear: left;
     float: left;
     font-size: larger;
 }
 
-#title0,#title1,#title2,#title3,#title4{
+#title{
     color: navy;
     font-size: large;
     clear: left;
@@ -198,7 +198,7 @@ img{
     margin-top: -5px;
 }
 
-#descrip0,#descrip1,#descrip2,#descrip3,#descrip4{
+#descrip{
     clear: left;
     float: left;
     margin: -5px 30% 0px 40px;
@@ -207,11 +207,11 @@ img{
     padding: 0;
 }
 
-#company0, #date0{
+#company, #date{
     display: inline;
 }
 
-#descrip0 li, #descrip1 li, #descrip2 li, #descrip3 li, #descrip4 li{
+#descrip li{
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
@@ -223,16 +223,16 @@ img{
     transition: .3s ease-out;
 }
 
-#descrip0 li:hover, #descrip1 li:hover, #descrip2 li:hover, #descrip3 li:hover, #descrip4 li:hover { 
+#descrip li:hover{ 
     background: #f9dd94; 
 }
 
-#descrip0 li:hover:before, #descrip1 li:hover:before, #descrip2 li:hover:before, #descrip3 li:hover:before, #descrip4 li:hover:before { 
+#descrip li:hover:before{ 
     transform: rotate(360deg); 
     background-color: lightblue;
 }
 
-#descrip0 li:before, #descrip1 li:before, #descrip2 li:before, #descrip3 li:before, #descrip4 li:before {
+#descrip li:before{
   content: counter(li);
   counter-increment: li;
   position: absolute;

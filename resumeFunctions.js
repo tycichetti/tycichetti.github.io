@@ -115,9 +115,9 @@ class Exp{
 }
 
 enterExp = function(currExp){
-    document.write("<h3 id='company"+eCount+"'>"+currExp.company+"</h3><h3 id='date"+eCount+"'>"+currExp.date+"</h3>"+
-                    "<h3 id='title"+eCount+"'>"+currExp.title+"</h3>")
-    document.write("<ul id='descrip"+eCount+"'>")
+    document.write("<h3 id='company'>"+currExp.company+"</h3><h3 id='date'>"+currExp.date+"</h3>"+
+                    "<h3 id='title'>"+currExp.title+"</h3>")
+    document.write("<ul id='descrip'>")
     writeDescrip(currExp.descrip)
     document.write("</ul>")
     eCount++
