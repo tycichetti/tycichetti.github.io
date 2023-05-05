@@ -9,8 +9,8 @@ createLeft = function(){
     document.write("<li class ='left-column'>"+
                         "<img src='tyler.jpg' height='300'>"+
                         "<br><a href='https://www.linkedin.com/in/tyler-cichetti' title='My LinkedIn' target='_blank'><img src='linkedin.jpg' alt='LinkedIn Logo' height='30'></a>"+
-                        "<a href='Tyler_Cichetti-Resume.pdf' target='_blank'><img src='document.gif' alt='Animated Document' height='30'></a>"+
-                        "<a href='mailto:tyler.cichetti@scranton.edu'><img src='email.gif' alt='Animated Email' height='30'></a>"+
+                        "<a href='Tyler_Cichetti-Resume.pdf' target='_blank'><img src='resume.jpg' alt='Animated Document' height='30'></a>"+
+                        "<a href='mailto:tyler.cichetti@scranton.edu'><img src='email.jpg' alt='Animated Email' height='30'></a>"+
                         "<a href='tel:908-655-2566'><img src='phone.gif' alt='Animated Phone' height='30'></a>"+                    
                     "</li>")
 }
