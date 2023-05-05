@@ -1,3 +1,4 @@
+/////////////////////////SKILLS/////////////////////////////
 //Operating Systems: Windows, Mac OS, Unix
 
 let windows = new Skill("Windows", "Have used for many years in personal and professional work.");
@@ -42,7 +43,6 @@ var pLAry=[java,c,python,sql,assembly,javascript,css,html]
 var hardwareAry=[repair,hardDrive,gpus]
 
 //////////////////EMPLOYMENT EXPERIENCES/////////////////////
-var eCount = 0
 let bL = new Exp("Bausch + Lomb, Bridgewater, New Jersey","June 2022 - August 2022","Sales Operations Intern",["Acted as a liaison for the Field Sales Team to organize and streamline Sales Force web based and IOS applications",
                                                                                                          "Facilitated data standardization to integrate specialty lens business",
                                                                                                          "Designed and implemented a new process for the Field Sales Team to manage the solution sample shipment"])

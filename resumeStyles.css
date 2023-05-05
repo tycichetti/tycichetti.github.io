@@ -1,5 +1,6 @@
 html{
     font-family: Georgia;
+    background-color: whitesmoke;
 }
 
 h2{
@@ -99,34 +100,6 @@ img{
     opacity: 1;
 }
 
-.skills{
-    margin: 40px 400px 0px 200px;
-    padding-left: 1em;
-}
-
-.info {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    visibility: hidden;
-    width: 200px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 5px;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px;
-    box-shadow: 0px 0px 5px black;
-}
-  
-.hover:hover .info {
-    visibility: visible;
-}
-
 @media (min-width: 768px) {
     .navbar button{
         padding: 14px 22px;
@@ -134,118 +107,5 @@ img{
     }
 }
 
-.hover {
-    font-size: 20px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 50px 13px;
-    outline: 0;
-    border: 1px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-  
-.hover::after {
-    content: "";
-    border-radius: 10px;
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-    box-shadow: 0px 0px 5px black;
-}
-  
-.hover:hover::after {
-    top: 0px;
-    left: 0px;
-}
 
-.experiences{
-    margin: 40px 30% 0px 20%;
-    padding-left: 1em;
-    padding-right: 1em;
-}
 
-.experiences h2{
-    text-align: center;
-}
-
-#date{
-    clear: right;
-    float: right;
-    font-size: larger;
-}
-
-#company{
-    clear: left;
-    float: left;
-    font-size: larger;
-}
-
-#title{
-    color: navy;
-    font-size: large;
-    clear: left;
-    float: left;
-    margin-top: -5px;
-}
-
-#descrip{
-    clear: left;
-    float: left;
-    margin: -5px 30% 0px 40px;
-    counter-reset: li; 
-    list-style: none; 
-    padding: 0;
-}
-
-#company, #date{
-    display: inline;
-}
-
-#descrip li{
-    position: relative;
-    display: block;
-    padding: .4em .4em .4em 2em;
-    margin: .5em 0;
-    background: lightblue;
-    color: black;
-    text-decoration: none;
-    border-radius: .3em;
-    transition: .3s ease-out;
-}
-
-#descrip li:hover{ 
-    background: #f9dd94; 
-}
-
-#descrip li:hover:before{ 
-    transform: rotate(360deg); 
-    background-color: lightblue;
-}
-
-#descrip li:before{
-  content: counter(li);
-  counter-increment: li;
-  position: absolute;
-  left: -1.3em;
-  top: 50%;
-  margin-top: -1.3em;
-  background-color: #f9dd94;
-  height: 2em;
-  width: 2em;
-  line-height: 2em;
-  border: .3em solid #fff;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 2em;
-  transition: all .3s ease-out;
-}

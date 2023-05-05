@@ -120,7 +120,6 @@ enterExp = function(currExp){
     document.write("<ul id='descrip'>")
     writeDescrip(currExp.descrip)
     document.write("</ul>")
-    eCount++
 }
 
 function writeDescrip(descrip){
