@@ -10,6 +10,10 @@ h3{
     font-size: 17px;
 }
 
+h4{
+    font-size: medium;
+}
+
 strong{
     font-size: 30px;
     margin-left: 10px;
@@ -220,7 +224,7 @@ img{
 }
 
 #descrip0 li:hover, #descrip1 li:hover, #descrip2 li:hover, #descrip3 li:hover, #descrip4 li:hover { 
-    background: whitesmoke; 
+    background: #f9dd94; 
 }
 
 #descrip0 li:hover:before, #descrip1 li:hover:before, #descrip2 li:hover:before, #descrip3 li:hover:before, #descrip4 li:hover:before { 
