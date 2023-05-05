@@ -33,8 +33,8 @@ createNavBar = function(){
                             "<button onclick='openHome()'>Home</button>"+
                             "<button onclick='openSkills()'>My Skils</button>"+
                             "<button onclick='openExperience()'>My Experience</button>"+
-                            "<button onclick='education()'>My Education</button>"+
-                            "<button onclick='contact()'>Contact Me</button>"+
+                            "<button onclick='openEducation()'>My Education</button>"+
+                            "<button onclick='openContact()'>Contact Me</button>"+
                         "</p>"+
                     "</nav>")
     }

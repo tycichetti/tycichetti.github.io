@@ -107,10 +107,17 @@ img{
     opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     .navbar button{
         padding: 14px 22px;
         width: 176px;
+    }
+}
+
+@media(max-width: 1080px){
+    .navbar button{
+        padding: 10px 20px;
+        width: 150px;
     }
 }
 
