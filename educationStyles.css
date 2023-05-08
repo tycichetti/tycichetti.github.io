@@ -1,0 +1,97 @@
+.education{
+    margin: 40px 15% 0px 15%;
+    padding-left: 1em;
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.hover:hover .info {
+    visibility: visible;
+}
+
+.hover {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+  
+.hover::after {
+    content: "";
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px black;
+}
+  
+.hover:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+.date{
+    clear: right;
+    float: right;
+    font-size: large;
+}
+
+.university{
+    clear: left;
+    float: left;
+    font-size: large;
+}
+
+.major{
+    color: black;
+    font-size: x-large;
+    clear: left;
+    float: left;
+    margin-top: -5px;
+}
+
+.GPA{
+    clear: right;
+    float: right;
+    font-size: larger;
+    margin-top: -5px;
+}
+
+.education h2{
+    clear: both;
+    float: left;
+}
+
+.courses{
+    clear: both;
+}

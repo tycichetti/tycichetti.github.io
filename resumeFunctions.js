@@ -19,25 +19,24 @@ createRight = function(){
     document.write("<li class='right-column'>"+
                         "<h1>Tyler Cichetti</h1>"+
                         "<h2><em>Computer Science Student at the University of Scranton</em></h2>"+
-                        "<h3>Member of Upsilon Pi Epsilon -- Computer Science Honor Society</h3>"+
-                        "<h4>Age: 20</a><br>"+  
-                        "<h4> Hometown: Somerville, New Jersey"+              
-                        "<h4>Email: tyler.cichetti@scranton.edu</a><br>"+
-                        "<h4>Phone Number: 908-655-2566</a>"+
+                        "<h3><a href='http://upe.acm.org' target='_blank'>Member of Upsilon Pi Epsilon -- Computer Science Honor Society</a></h3>"+
+                        "<h4>Age: 20</h4>"+  
+                        "<h4> Hometown: Somerville, New Jersey</h4>"+              
+                        "<h4>Email: tyler.cichetti@scranton.edu</h4>"+
+                        "<h4>Phone Number: 908-655-2566</h4>"+
                     "<li>")
 }
 
 createNavBar = function(){
     document.write("<nav class='navbar'>"+
                         "<p><strong>Cichetti</strong>"+
-                            "<button onclick='openHome()'>Home</button>"+
-                            "<button onclick='openSkills()'>My Skils</button>"+
-                            "<button onclick='openExperience()'>My Experience</button>"+
-                            "<button onclick='openEducation()'>My Education</button>"+
-                            "<button onclick='openContact()'>Contact Me</button>"+
+                            "<button onclick=\"location.href='index.html'\">Home</button>"+
+                            "<button onclick=\"location.href='skills.html'\">My Skills</button>"+
+                            "<button onclick=\"location.href='experience.html'\">My Experience</button>"+
+                            "<button onclick=\"location.href='education.html'\">My Education</button>"+
                         "</p>"+
                     "</nav>")
-    }
+}
 
 createTopHalf = function(){
     document.write("<body>")
@@ -45,14 +44,21 @@ createTopHalf = function(){
     createColumns()
 }
 
+createHome = function(){
+    createTopHalf()
+    document.write( "<div class='typing'>"+
+                        "<h1 >Welcome To My Resume Website</h1>"+
+                        "<p>"+
+                            "Thank you for taking the time to visit my website. I hope you find the information provided useful. Have a great day!"+
+                        "</p>"+
+                    "</div>")
+    endHtml()
+}
+
 endHtml = function(){
     document.write("</body>"+
                     "</html>")
 
-}
-
-openHome = function(){
-    window.location = "index.html"
 }
 
 skills = function(){
@@ -89,10 +95,6 @@ enterSkills = function(name, description){
     document.write("<button class='hover' href='#'>"+name+"<span class='info'>"+description+"</span></button>")
 }
 
-openSkills = function(){
-    window.location = "skills.html"
-}
-
 experiences = function(){
     createTopHalf()
     document.write("<div class='experiences''>"+
@@ -115,7 +117,8 @@ class Exp{
 }
 
 enterExp = function(currExp){
-    document.write("<h3 id='company'>"+currExp.company+"</h3><h3 id='date'>"+currExp.date+"</h3>"+
+    document.write("<h3 id='company'>"+currExp.company+
+                   "</h3><h3 id='date'>"+currExp.date+"</h3>"+
                     "<h3 id='title'>"+currExp.title+"</h3>")
     document.write("<ul id='descrip'>")
     writeDescrip(currExp.descrip)
@@ -128,6 +131,52 @@ function writeDescrip(descrip){
     }
 }
 
-openExperience = function(){
-    window.location = "experience.html"
+class Edu{
+    constructor(university,date,major,GPA,honors,courses){
+        this.university = university;
+        this.date = date;
+        this.major = major
+        this.GPA = GPA
+        this.honors = honors
+        this.courses = courses
+    }
 }
+
+class Coursework{
+    constructor(name,descrip,link){
+        this.name = name
+        this.descrip = descrip
+        this.link = link
+    }
+}
+
+education = function(){
+    createTopHalf()
+    document.write("<div class='education'>")
+    for(var i = 0; i < eduAry.length; i++){
+        enterEducation(eduAry[i])
+    }
+    document.write("</div>")
+    endHtml()
+}
+
+enterEducation = function(currEdu){
+    document.write("<h3 class='university'>"+currEdu.university+
+                   "</h3><h3 class='date'>"+currEdu.date+"</h3>"+
+                    "<h3 class='major'>"+currEdu.major+"</h3>"+
+                    "</h3><h3 class='GPA'>"+currEdu.GPA+"</h3>"+
+                    "<h2>Relevant Coursework:</h2>")
+    var courses = currEdu.courses
+    document.write("<div class='courses'>")
+    for(var j = 0; j < courses.length; j++){
+        enterCourse(courses[j])
+    }
+    document.write("</div>")
+}
+
+enterCourse = function(currCourse){
+    document.write("<button class='hover' onclick=\"location.href='"+currCourse.link+"'\" target='_blank' type='button'>"+currCourse.name+
+                        "<span class='info'>"+currCourse.descrip+"</span>"+
+                   "</button>")
+}
+

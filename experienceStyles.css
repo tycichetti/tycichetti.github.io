@@ -22,7 +22,7 @@
 
 #title{
     color: navy;
-    font-size: large;
+    font-size: x-large;
     clear: left;
     float: left;
     margin-top: -5px;
@@ -37,9 +37,6 @@
     padding: 0;
 }
 
-#company, #date{
-    display: inline;
-}
 
 #descrip li{
     position: relative;

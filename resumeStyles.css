@@ -2,7 +2,8 @@ html{
     font-family: Georgia;
     background: linear-gradient(15deg, white, lightgoldenrodyellow);
     background-repeat: no-repeat;
-    background-size: 150% 200%;}
+    background-size: 3000% 3000%;
+}
 
 h2{
     font-size: 21px;
@@ -97,6 +98,13 @@ img{
     opacity: .5;
 }
 
+.navbar button:active{
+    background-color: lightblue;
+    box-shadow: 0px 0px 5px black;
+    opacity: 1;
+ 
+}
+
 .navbar button:active {
     box-shadow: 0px 0px 5px black;
     transform: translateY(2px);
@@ -107,19 +115,23 @@ img{
     opacity: 1;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 960px) {
     .navbar button{
         padding: 14px 22px;
-        width: 176px;
+        width: 180px;
     }
 }
 
-@media(max-width: 1080px){
+@media(max-width: 960px){
     .navbar button{
         padding: 10px 20px;
         width: 150px;
     }
 }
 
-
-
+.typing{
+    display: inline-block;
+    font-size: 24px;
+    margin: 40px 15% 0px 15%;
+    text-align: center;
+}
