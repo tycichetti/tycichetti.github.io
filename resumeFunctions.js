@@ -96,7 +96,7 @@ class Skill{
 }
 
 enterSkills = function(name, description){
-    document.write("<button onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" class='hover' href='#'>"+name+"<span class='info'>"+description+"</span></button>")
+    document.write("<button onclick=\"alert('"+description+"')\" onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" class='hover' href='#'>"+name+"<span class='info'>"+description+"</span></button>")
 }
 
 experiences = function(){
