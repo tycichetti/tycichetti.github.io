@@ -1,3 +1,4 @@
+var follower = document.querySelector(".follower")
 createColumns = function(){
     document.write("<ul class='columns'>")
     createLeft()
@@ -8,10 +9,10 @@ createColumns = function(){
 createLeft = function(){
     document.write("<li class ='left-column'>"+
                         "<img src='tyler.jpg' height='300'>"+
-                        "<br><a href='https://www.linkedin.com/in/tyler-cichetti' title='My LinkedIn' target='_blank'><img src='linkedin.jpg' alt='LinkedIn Logo' height='30'></a>"+
-                        "<a href='Tyler_Cichetti-Resume.pdf' target='_blank'><img src='resume.jpg' alt='Animated Document' height='30'></a>"+
-                        "<a href='mailto:tyler.cichetti@scranton.edu'><img src='email.jpg' alt='Animated Email' height='30'></a>"+
-                        "<a href='tel:908-655-2566'><img src='phone.gif' alt='Animated Phone' height='30'></a>"+                    
+                        "<br><a onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" href='https://www.linkedin.com/in/tyler-cichetti' title='My LinkedIn' target='_blank'><img class='images' src='linkedin.jpg' alt='LinkedIn Logo' height='30'></a>"+
+                        "<a onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" href='Tyler_Cichetti-Resume.pdf' target='_blank'><img class='images' src='resume.jpg' alt='Animated Document' height='30'></a>"+
+                        "<a onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\"   href='mailto:tyler.cichetti@scranton.edu'><img class='images' src='email.jpg' alt='Animated Email' height='30'></a>"+
+                        "<a onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" href='tel:908-655-2566'><img class='images' src='phone.gif' alt='Animated Phone' height='30'></a>"+                    
                     "</li>")
 }
 
@@ -19,7 +20,7 @@ createRight = function(){
     document.write("<li class='right-column'>"+
                         "<h1>Tyler Cichetti</h1>"+
                         "<h2><em>Computer Science Student at the University of Scranton</em></h2>"+
-                        "<h3><a href='http://upe.acm.org' target='_blank'>Member of Upsilon Pi Epsilon -- Computer Science Honor Society</a></h3>"+
+                        "<h3><a onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" href='http://upe.acm.org' target='_blank'>Member of Upsilon Pi Epsilon -- Computer Science Honor Society</a></h3>"+
                         "<h4>Age: 20</h4>"+  
                         "<h4> Hometown: Somerville, New Jersey</h4>"+              
                         "<h4>Email: tyler.cichetti@scranton.edu</h4>"+
@@ -30,23 +31,24 @@ createRight = function(){
 createNavBar = function(){
     document.write("<nav class='navbar'>"+
                         "<p><strong>Cichetti</strong>"+
-                            "<button onclick=\"location.href='index.html'\">Home</button>"+
-                            "<button onclick=\"location.href='skills.html'\">My Skills</button>"+
-                            "<button onclick=\"location.href='experience.html'\">My Experience</button>"+
-                            "<button onclick=\"location.href='education.html'\">My Education</button>"+
+                            "<button onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" onclick=\"location.href='index.html'\">Home</button>"+
+                            "<button onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" class='navBut' onclick=\"location.href='skills.html'\">My Skills</button>"+
+                            "<button onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" class='navBut' onclick=\"location.href='experience.html'\">My Experience</button>"+
+                            "<button onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" class='navBut' onclick=\"location.href='education.html'\">My Education</button>"+
                         "</p>"+
                     "</nav>")
 }
 
 createTopHalf = function(){
-    document.write("<body>")
+    document.write("<body>"+
+                   "<div class='follower'></div>")
     createNavBar()
     createColumns()
 }
 
 createHome = function(){
     createTopHalf()
-    document.write( "<div class='typing'>"+
+    document.write( "<div class='message'>"+
                         "<h1 >Welcome To My Resume Website</h1>"+
                         "<p>"+
                             "Thank you for taking the time to visit my website. I hope you find the information provided useful. Have a great day!"+
@@ -92,7 +94,7 @@ class Skill{
 }
 
 enterSkills = function(name, description){
-    document.write("<button class='hover' href='#'>"+name+"<span class='info'>"+description+"</span></button>")
+    document.write("<button onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" class='hover' href='#'>"+name+"<span class='info'>"+description+"</span></button>")
 }
 
 experiences = function(){
@@ -175,8 +177,7 @@ enterEducation = function(currEdu){
 }
 
 enterCourse = function(currCourse){
-    document.write("<button class='hover' onclick=\"location.href='"+currCourse.link+"'\" target='_blank' type='button'>"+currCourse.name+
+    document.write("<button class='hover' onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" onclick=\"location.href='"+currCourse.link+"'\" target='_blank' type='button'>"+currCourse.name+
                         "<span class='info'>"+currCourse.descrip+"</span>"+
                    "</button>")
 }
-

@@ -3,6 +3,7 @@ html{
     background: linear-gradient(15deg, white, lightgoldenrodyellow);
     background-repeat: no-repeat;
     background-size: 3000% 3000%;
+    cursor: none;
 }
 
 h2{
@@ -20,6 +21,19 @@ h4{
 strong{
     font-size: 30px;
     margin-left: 10px;
+}
+
+.follower{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to top left, #0062bE, #00A2FE);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 10;
 }
 
 .columns {
@@ -40,6 +54,10 @@ strong{
 
 img{
     padding: 1em;
+}
+
+.upe{
+    color: black;
 }
 
 .navbar{
@@ -87,6 +105,7 @@ img{
 }
 
 .navbar button:hover {
+    cursor: none;
     background-color: lightblue;
     box-shadow: 0px 0px 5px black;
     opacity: 1;
@@ -99,20 +118,22 @@ img{
 }
 
 .navbar button:active{
+    cursor: none;
     background-color: lightblue;
     box-shadow: 0px 0px 5px black;
     opacity: 1;
- 
 }
 
 .navbar button:active {
     box-shadow: 0px 0px 5px black;
     transform: translateY(2px);
     transition-duration: .35s;
+    cursor: none;
 }
 
 .navbar button:active:after{
     opacity: 1;
+    cursor: none;
 }
 
 @media (min-width: 960px) {
@@ -127,9 +148,22 @@ img{
         padding: 10px 20px;
         width: 150px;
     }
+
+    .left-column{
+        margin-left: 5%;
+    }
 }
 
-.typing{
+.right-column a:hover{
+    cursor: none;
+}
+
+.left-column .images:hover{
+    cursor: none;
+    transform: scale(1.3);
+}
+
+.message{
     display: inline-block;
     font-size: 24px;
     margin: 40px 15% 0px 15%;

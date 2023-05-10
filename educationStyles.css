@@ -22,8 +22,14 @@
     box-shadow: 0px 0px 5px black;
 }
 
+.info:hover{
+    cursor: none;
+}
+
 .hover:hover .info {
     visibility: visible;
+    cursor: none;
+
 }
 
 .hover {
@@ -41,6 +47,10 @@
     margin-bottom: 20px;
 }
   
+.hover:hover{
+    cursor: none;
+}
+
 .hover::after {
     content: "";
     border-radius: 10px;
