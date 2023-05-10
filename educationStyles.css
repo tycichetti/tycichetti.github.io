@@ -32,6 +32,7 @@
 
 }
 
+
 .hover {
     font-size: 20px;
     font-weight: 200;
@@ -97,10 +98,15 @@
     margin-top: -5px;
 }
 
-.education h2{
+.education .coursework{
     clear: both;
     float: left;
 }
+
+.education .title{
+    text-align: center;
+}
+
 
 .courses{
     clear: both;

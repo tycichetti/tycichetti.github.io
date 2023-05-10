@@ -49,7 +49,8 @@ createTopHalf = function(){
 createHome = function(){
     createTopHalf()
     document.write( "<div class='message'>"+
-                        "<h1 >Welcome To My Resume Website</h1>"+
+                        "<h1><span style='--i:1'>W</span><span style='--i:2'>e</span><span style='--i:3'>l</span><span style='--i:4'>c</span><span style='--i:5'>o</span><span style='--i:6'>m</span><span style='--i:7'>e</span>"+
+                            " <span style='--i:8'>T</span><span style='--i:9'>o</span> <span style='--i:10'>M</span><span style='--i:11'>y</span> <span style='--i:12'>R</span><span style='--i:13'>e</span><span style='--i:14'>s</span><span style='--i:15'>u</span><span style='--i:16'>m</span><span style='--i:17'>e</span></h1>"+
                         "<p>"+
                             "Thank you for taking the time to visit my website. I hope you find the information provided useful. Have a great day!"+
                         "</p>"+
@@ -65,7 +66,8 @@ endHtml = function(){
 
 skills = function(){
     createTopHalf()
-    document.write("<div class='skills'>")
+    document.write("<div class='skills'>"+
+                    "<h2 class='title'><strong>Skills</strong></h2>")
         document.write("<h2>Operating Systems:</h2>")
         for(var i = 0; i < osAry.length; i++){
             enterSkills(osAry[i].name, osAry[i].description)
@@ -101,7 +103,6 @@ experiences = function(){
     createTopHalf()
     document.write("<div class='experiences''>"+
                         "<h2><strong>Employment Experience</strong></h2>")
-    
     for(var i =0; i < eAry.length; i++){
         enterExp(eAry[i])
     }
@@ -154,7 +155,8 @@ class Coursework{
 
 education = function(){
     createTopHalf()
-    document.write("<div class='education'>")
+    document.write("<div class='education'>"+
+                    "<h2 class='title'><strong>Education</strong></h2>")
     for(var i = 0; i < eduAry.length; i++){
         enterEducation(eduAry[i])
     }
@@ -167,7 +169,7 @@ enterEducation = function(currEdu){
                    "</h3><h3 class='date'>"+currEdu.date+"</h3>"+
                     "<h3 class='major'>"+currEdu.major+"</h3>"+
                     "</h3><h3 class='GPA'>"+currEdu.GPA+"</h3>"+
-                    "<h2>Relevant Coursework:</h2>")
+                    "<h2 class='coursework'>Relevant Coursework:</h2>")
     var courses = currEdu.courses
     document.write("<div class='courses'>")
     for(var j = 0; j < courses.length; j++){
@@ -177,7 +179,7 @@ enterEducation = function(currEdu){
 }
 
 enterCourse = function(currCourse){
-    document.write("<button class='hover' onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" onclick=\"location.href='"+currCourse.link+"'\" target='_blank' type='button'>"+currCourse.name+
+    document.write("<button class='hover' onmouseover=\"follower.style.width = '30px'; follower.style.height ='30px'\" onmouseout=\"follower.style.width = '20px';follower.style.height='20px'\" onclick=\"window.open('"+currCourse.link+"','_blank');\" type='button'>"+currCourse.name+
                         "<span class='info'>"+currCourse.descrip+"</span>"+
                    "</button>")
 }
