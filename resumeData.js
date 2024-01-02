@@ -70,5 +70,5 @@ let pl = new Coursework("Programming Languages","A study of programming language
 
 var scrantonCourses = [csI,csII,dsa,moalp,tfcs,os,dbs,ai,wp,pl]
 
-let scranton = new Edu("The University of Scranton, Scranton, Pennsylvania","August 2020-Present","Bachelor of Science in Computer Science","3.4/4.00 GPA","Member of Upsilon Pi Epsilon -- Computer Science Honors Society",scrantonCourses)
+let scranton = new Edu("The University of Scranton, Scranton, Pennsylvania","August 2020-Present","Bachelor of Science in Computer Science","3.34/4.00 GPA","Member of Upsilon Pi Epsilon -- Computer Science Honors Society",scrantonCourses)
 var eduAry = [scranton]
