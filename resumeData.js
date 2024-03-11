@@ -61,7 +61,7 @@ let oN = new Exp("Old Navy, Bridgewater, New Jersey", "June 2019 - January 2021"
                                                                                                     "Maintained accurate and attractive floor displays in line with the company standards"])
 let cP = new Exp("Café Picasso, Somerville, New Jersey", "September 2018 - February 2019", "Italian Restaurant Bus Boy",["Maintain and exceed company standards of service","Assist in creating positive guest experience that encourages customers to return",
                                                                                                                         "Clean and stock service stations","Notify management if stock for various items may be running low"])
-var eAry = [pbl,bL,dD,oN,cP]
+var eAry = [pbL,bL,dD,oN,cP]
 
 //////////////////EDUCATION/////////////////////
 let csI = new Coursework("Computer Science I","An introduction to programming concepts and methodology using an object-oriented programming language (currently Java).  Topics include problem analysis, abstraction, modularization, the development and use of algorithms, reuse, and the use of programming constructs including data types, classes, control structures, and methods.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=10&coid=9326")
