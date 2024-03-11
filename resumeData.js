@@ -28,6 +28,9 @@ let assembly = new Skill("Assembly", "Learned in Machine Organization and Assemb
 let javascript = new Skill("JavaScript", "Learned in Spring of 2023 in my Web Development class. Most of this website you are looking at is made completely in JavaScript.");
 let css = new Skill("CSS", "In Spring of 2023, I learned this language. Have since built many projects and this one right here utilizes a lot of CSS.");
 let html = new Skill("HTML", "Learned in Spring 2023 and have since made many projects using the language, such as the one you are currently looking at.");
+let react = new Skill("React", "Taught myself how to use React in the January 2024 in order to create my Senior Capstone Project, a recipe storage website.");
+let kotlin = new Skill("Kotlin", "Learned in Spring 2024, for my Mobile App Development class. Have used it for many projects within that class.");
+let jc = new Skill("Jetpack Compose", "Learned in Spring 2024, for my Mobile App Development class. Have used it for many projects within that class.");
 
 
 //Hardware Knowledge: Computer repair and upgrades including memory, Hard Drives, GPU’s
@@ -39,10 +42,14 @@ let gpus = new Skill("GPUs", "Installed a new GPU into my personal computer.");
 
 var osAry=[windows,macOs,unix,]
 var softAry=[eclipse,vsCode,jGrasp,excel,office,photoshop,puTTY,gitHub,gSuite,salesforce]
-var pLAry=[java,c,python,sql,assembly,javascript,css,html]
+var pLAry=[java,c,python,sql,assembly,javascript,css,html,react,kotlin,jc]
 var hardwareAry=[repair,hardDrive,gpus]
 
 //////////////////EMPLOYMENT EXPERIENCES/////////////////////
+let pbL = new Exp("Bausch + Lomb, Bridgewater, New Jersey","June 2023 - Present","Pharma Systems Admin Intern",["Supported the ACTO Learning Management System (LMS) Admin with day-to-day processes to optimize learner experience",
+                                                                                                         "Created an animated video using Vyond, for promoting a product launch program to Health Care Professional’s and Sales Representatives",
+                                                                                                         "Leveraged software knowledge to provide input in the selection of a new Learning Management System"])
+
 let bL = new Exp("Bausch + Lomb, Bridgewater, New Jersey","June 2022 - August 2022","Sales Operations Intern",["Acted as a liaison for the Field Sales Team to organize and streamline Sales Force web based and IOS applications",
                                                                                                          "Facilitated data standardization to integrate specialty lens business",
                                                                                                          "Designed and implemented a new process for the Field Sales Team to manage the solution sample shipment"])
@@ -54,7 +61,7 @@ let oN = new Exp("Old Navy, Bridgewater, New Jersey", "June 2019 - January 2021"
                                                                                                     "Maintained accurate and attractive floor displays in line with the company standards"])
 let cP = new Exp("Café Picasso, Somerville, New Jersey", "September 2018 - February 2019", "Italian Restaurant Bus Boy",["Maintain and exceed company standards of service","Assist in creating positive guest experience that encourages customers to return",
                                                                                                                         "Clean and stock service stations","Notify management if stock for various items may be running low"])
-var eAry = [bL,dD,oN,cP]
+var eAry = [pbl,bL,dD,oN,cP]
 
 //////////////////EDUCATION/////////////////////
 let csI = new Coursework("Computer Science I","An introduction to programming concepts and methodology using an object-oriented programming language (currently Java).  Topics include problem analysis, abstraction, modularization, the development and use of algorithms, reuse, and the use of programming constructs including data types, classes, control structures, and methods.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=10&coid=9326")
@@ -67,8 +74,12 @@ let dbs = new Coursework("Database Systems", "An introduction to database manage
 let ai = new Coursework("Artificial Intelligence","Problem solving using expert systems, heuristic programming techniques, tree speed-up techniques, and learning mechanisms.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=10&coid=9350")
 let wp = new Coursework("Web Programming","This course covers all aspects of programming on the World Wide Web.  This includes the presentation of HTML, Java, JavaScript and CGI.  Topics include advanced HTML (maps, forms, etc.) client-server programming basics as they relate to the Web, Java machine concepts, Java/JavaScript similarities and differences, server-side programming, GIF animations, Web programming resources and environments.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=56&coid=72292")
 let pl = new Coursework("Programming Languages","A study of programming languages from both the theoretical and practical perspectives.  A survey of major and developing paradigms and languages is undertaken which includes use of specific languages to broaden the student’s experience.  Implementation is studied through an introduction to language translation along with a study of run-time models and interfaces with virtual machines.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=10&coid=9340")
+let dcn = new Coursework("Data Communications and Networks","A study of data communication and networking concepts, including distributed-system architectures, electronic interfaces, data-transmission, data link protocols, terminal networks, computer communication, public-data networks, and local-area networks.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=56&coid=72291")
+let fse = new Coursework("Fundamentals Of Software Engineering","An introduction to the concepts of Software Engineering.  Stress is placed upon formal models for the design and development of high-quality software.  Topics include: project planning, requirements analysis, system design, program design, program implementation, program testing, system testing, system delivery, and maintenance.  A group project will be included.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=56&coid=72299")
+let mad = new Coursework("Mobile Application Development","This course deals with the development of software for mobile devices such as smartphones and tablets.  Topics include, but are not limited to, graphical user interface design, event-driven software model, resource management, interfacing with sensors, concurrency, database access, and networking.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=56&coid=72305")
+let cp = new Coursework("Capstone Project","In this course, students prepare and present individual computer projects to be evaluated by the instructor and their fellow students.","https://catalog.scranton.edu/preview_course_nopop.php?catoid=10&coid=9340")
 
-var scrantonCourses = [csI,csII,dsa,moalp,tfcs,os,dbs,ai,wp,pl]
+var scrantonCourses = [csI,csII,dsa,moalp,tfcs,os,dbs,ai,wp,pl,dcn,fse,mad,cp]
 
 let scranton = new Edu("The University of Scranton, Scranton, Pennsylvania","August 2020-Present","Bachelor of Science in Computer Science","3.34/4.00 GPA","Member of Upsilon Pi Epsilon -- Computer Science Honors Society",scrantonCourses)
 var eduAry = [scranton]
